@@ -1,0 +1,34 @@
+{
+	"uploadOnSave": true,
+	"autoDelete": true,
+	"activeTargets": [
+		"My FTP"
+	],
+	"concurrency": 5,
+	"ignore": [
+		".git/**/*",
+		".vscode/**/*"
+	],
+	"targets": [
+		{
+			"name": "Bispeaker",
+			"type": "ftp",
+			"host": "91.219.60.60",
+			"port": 21,
+			"user": "rfbqjnyf_ftp_alex",
+			"password": "xA2aT7lN2cwI0o",
+			"dir": "/bispeaker/"
+		},
+		{
+			"name": "My SFTP",
+			"type": "sftp",
+			"host": "localhost",
+			"port": 22,
+			"user": "admin",
+			"password": "123456",
+			"dir": "/",
+			"privateKey": null,
+			"passphrase": null
+		}
+	]
+}
