@@ -1,6 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+body {
+  color: #191C1E;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  background: #FBFCFF;
+}
+
+a, .nav-link {
+  color: #00668B;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary.hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active {
+  background: #00668B;
+  border-color: #00668B;
+  border-radius: 100px;
+  padding: 10px 24px 10px 24px;
+}
+.btn-primary:hover, .btn-primary:hover:hover, .btn-primary.hover:hover, .btn-primary:focus:hover, .btn-primary.focus:hover, .btn-primary:active:hover, .btn-primary.active:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)), #00668B;
+  box-shadow: 0px 1px 3px 1px #00000026;
+  box-shadow: 0px 1px 2px 0px #0000004D;
+}
+
+h6 {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+}
+
+.error_image {
+  max-height: 128px;
+  height: min(max(72px, calc(4.5rem + ((1vw - 3.6px) * 3.5897))), 128px);
+}
+
 .logo {
-  margin-top: 48px;
+  margin-top: min(max(24px, calc(1.5rem + ((1vw - 3.6px) * 1.5385))), 48px);
+  margin-bottom: min(max(72px, calc(4.5rem + ((1vw - 3.6px) * 8.2051))), 200px);
 }
 .logo img {
-  height: 64px;
+  max-height: 64px;
+  height: min(max(32px, calc(2rem + ((1vw - 3.6px) * 2.0513))), 64px);
+}
+
+.footer {
+  margin-bottom: min(max(24px, calc(1.5rem + ((1vw - 3.6px) * 1.5385))), 48px);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+.footer .info {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.1000000015px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.footer .privacy-policy {
+  margin-bottom: 24px;
+}
+.footer .privacy-policy .nav-item + .nav-item::before {
+  float: left;
+  margin: 0 8px;
+  color: #4E616D;
+  content: "|";
+}
+.footer .privacy-policy .nav-item .nav-link {
+  padding: 0;
+  display: flex;
+}
+.footer .copyright {
+  color: #4E616D;
 }
